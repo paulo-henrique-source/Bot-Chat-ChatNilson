@@ -1,0 +1,51 @@
+.chat {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat .bot-photo {
+  width: 60px;
+  height: 60px;
+  background: #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat .bot-photo img {
+  width: 100%;
+}
+
+.chat .chat-message {
+  width: 70%;
+  padding: 15px;
+  margin: 5px 25px 0;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.bot .chat-message {
+  background-color: #fff;
+  border: solid 2px black;
+}
+
+/* APROCH-CHAT */
+
+.bot .tooltip-bot {
+  position: relative;
+  margin-left: -7px;
+}
+
+.tooltip-bot::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 27px;
+  background: white;
+  top: 22px;
+  right: 380px;
+  transform: rotate(61deg);
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}

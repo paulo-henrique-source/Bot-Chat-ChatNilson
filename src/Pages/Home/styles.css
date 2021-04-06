@@ -1,0 +1,48 @@
+.chatbox {
+  width: 500px;
+  min-width: 390px;
+  height: 600px;
+  background: #cfe2f3;
+  padding: 25px;
+  margin: 20px auto;
+  box-shadow: 0 3px #ccc;
+}
+
+.chatlogs {
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.chatlogs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .1);
+}
+
+.hide {
+  display: none;
+}
+
+.saveButton {
+  background-color: #fff;
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.stepFive {
+  margin-bottom: 40px;
+}

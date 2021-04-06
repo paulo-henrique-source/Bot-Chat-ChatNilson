@@ -1,0 +1,92 @@
+.chat {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat .chat-message-user {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 10px 0;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.user .chat-message-user {
+  background-color: #fff;
+  border: solid 2px black;
+}
+
+.invite-div {
+  display: flex;
+}
+
+.input-user {
+  height: 60px;
+  width: 300px;
+  border: 2px solid black;
+  margin-right: 10px;
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+.input-user::placeholder {
+  opacity: 1;
+  color: black;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+/* button invite */
+
+.invite-button {
+  outline: none;
+  position: relative;
+  box-sizing: content-box;
+  display: block;
+  padding: 0px;
+}
+
+.chat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.invite-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 40px solid #a9c99c;
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+  cursor: pointer;
+}
+
+/* APROCH-CHAT */
+
+.user .tooltip {
+  position: relative;
+  margin-left: 2px;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  height: 27px;
+  width: 17px;
+  background: white;
+  top: 18px;
+  left: -22px;
+  transform: rotate(32deg);
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: .6rem;
+}

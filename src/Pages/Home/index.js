@@ -61,7 +61,7 @@ const Home = () => {
     email,
   }
 
-  function getStyles(errors, fieldName) {
+  const getStyles = (errors, fieldName) => {
     var input = document.getElementById(fieldName)
     if (getIn(errors, fieldName)) {
       input.classList.add('error')
@@ -73,7 +73,7 @@ const Home = () => {
     }
   }
 
-  function getStylesButton(errors, fieldName) {
+  const getStylesButton = (errors, fieldName) => {
     if (getIn(errors, fieldName)) {
       return {
         borderLeft: `40px solid ${theme.colors.dangerColor}`,

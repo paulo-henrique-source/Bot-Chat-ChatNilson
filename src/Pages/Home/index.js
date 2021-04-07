@@ -120,7 +120,6 @@ const Home = () => {
       }
     } finally {
       setIsLoading(false)
-      console.log(data)
       alert('Usuario Cadastrado com Sucesso !')
       window.location.reload()
     }

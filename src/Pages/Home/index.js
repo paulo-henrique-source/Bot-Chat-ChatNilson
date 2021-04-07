@@ -31,7 +31,7 @@ const Home = () => {
   const [stepTwo, setStepTwo] = useState(false)
   const [stepThree, setStepThree] = useState(false)
   const [stepFour, setStepFour] = useState(false)
-  const [stepFive, setStepFive] = useState(true)
+  const [stepFive, setStepFive] = useState(false)
   const { theme } = useTheme()
 
   const max = new Date().toISOString().split('T')[0].toString()

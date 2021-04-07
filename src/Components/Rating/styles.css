@@ -71,3 +71,13 @@
   color: white;
   text-shadow: 0 0 5px #ffdd3c;
 }
+
+@media (max-width: 570px) {
+  .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 35px;
+    font-size: 29px;
+  }
+}

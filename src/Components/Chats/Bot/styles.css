@@ -32,3 +32,39 @@
   border-bottom: 2px solid var(--Black);
   border-left: 2px solid var(--Black);
 }
+
+@media (max-width: 325px) {
+  .chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .chat .chat-message {
+    width: 65%;
+    padding: 15px;
+    margin: 5px 0px 0px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 285px) {
+  .chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .chat .chat-message {
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0px 0px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    font-size: 20px;
+  }
+}

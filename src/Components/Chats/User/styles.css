@@ -111,3 +111,528 @@
   justify-content: flex-end;
   width: 90%;
 }
+
+@media (max-width: 420px) {
+  .chatUser {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 380px;
+  }
+  .chatUser .chat-message-user {
+    display: flex;
+    width: 75%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    font-size: 20px;
+  }
+  .invite-div {
+    display: flex;
+  }
+  .input-user {
+    height: 30px;
+    width: 190px;
+    border: 2px solid var(--Black);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+    background-color: transparent;
+  }
+  .input-user.error {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user::placeholder {
+    opacity: 1;
+    color: var(--Black);
+    padding-left: 5px;
+    font-size: 16px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user.error::placeholder {
+    opacity: 1;
+    color: var(--Danger);
+    padding-left: 5px;
+    font-size: 18px;
+    transition: ease-in-out 200ms;
+  }
+  .invite-button {
+    outline: none;
+    position: relative;
+    box-sizing: content-box;
+    display: block;
+    padding: 0px;
+  }
+  .chat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .invite-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 40px solid var(--Success);
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+  }
+  .user .tooltip {
+    position: relative;
+    margin-left: 2px;
+  }
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    height: 27px;
+    width: 17px;
+    background: var(--White);
+    top: 18px;
+    left: -22px;
+    transform: rotate(32deg);
+    border-top: 2px solid var(--Black);
+    border-right: 2px solid var(--Black);
+  }
+  .error {
+    position: relative;
+    color: var(--Danger);
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  .chatUser {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 330px;
+  }
+  .chatUser .chat-message-user {
+    display: flex;
+    width: 75%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    font-size: 20px;
+  }
+  .invite-div {
+    display: flex;
+  }
+  .input-user {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+    background-color: transparent;
+  }
+  .input-user.error {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user::placeholder {
+    opacity: 1;
+    color: var(--Black);
+    padding-left: 5px;
+    font-size: 16px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user.error::placeholder {
+    opacity: 1;
+    color: var(--Danger);
+    padding-left: 5px;
+    font-size: 18px;
+    transition: ease-in-out 200ms;
+  }
+  .invite-button {
+    outline: none;
+    position: relative;
+    box-sizing: content-box;
+    display: block;
+    padding: 0px;
+  }
+  .chat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .invite-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 40px solid var(--Success);
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+  }
+  .user .tooltip {
+    position: relative;
+    margin-left: 2px;
+  }
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    height: 27px;
+    width: 17px;
+    background: var(--White);
+    top: 18px;
+    left: -22px;
+    transform: rotate(32deg);
+    border-top: 2px solid var(--Black);
+    border-right: 2px solid var(--Black);
+  }
+  .error {
+    position: relative;
+    color: var(--Danger);
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .chatUser {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 330px;
+  }
+  .chatUser .chat-message-user {
+    display: flex;
+    width: 75%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    font-size: 20px;
+  }
+  .invite-div {
+    display: flex;
+  }
+  .input-user {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+    background-color: transparent;
+  }
+  .input-user.error {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user::placeholder {
+    opacity: 1;
+    color: var(--Black);
+    padding-left: 5px;
+    font-size: 16px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user.error::placeholder {
+    opacity: 1;
+    color: var(--Danger);
+    padding-left: 5px;
+    font-size: 18px;
+    transition: ease-in-out 200ms;
+  }
+  .invite-button {
+    outline: none;
+    position: relative;
+    box-sizing: content-box;
+    display: block;
+    padding: 0px;
+  }
+  .chat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .invite-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 40px solid var(--Success);
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+  }
+  .user .tooltip {
+    position: relative;
+    margin-left: 2px;
+  }
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    height: 27px;
+    width: 17px;
+    background: var(--White);
+    top: 18px;
+    left: -22px;
+    transform: rotate(32deg);
+    border-top: 2px solid var(--Black);
+    border-right: 2px solid var(--Black);
+  }
+  .error {
+    position: relative;
+    color: var(--Danger);
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+  }
+}
+
+@media (max-width: 325px) {
+  .chatUser {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 292px;
+  }
+  .chatUser .chat-message-user {
+    display: flex;
+    width: 83%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    font-size: 20px;
+  }
+  .invite-div {
+    display: flex;
+  }
+  .input-user {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+    background-color: transparent;
+  }
+  .input-user.error {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user::placeholder {
+    opacity: 1;
+    color: var(--Black);
+    padding-left: 5px;
+    font-size: 16px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user.error::placeholder {
+    opacity: 1;
+    color: var(--Danger);
+    padding-left: 5px;
+    font-size: 18px;
+    transition: ease-in-out 200ms;
+  }
+  .invite-button {
+    outline: none;
+    position: relative;
+    box-sizing: content-box;
+    display: block;
+    padding: 0px;
+  }
+  .chat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .invite-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 40px solid var(--Success);
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+  }
+  .user .tooltip {
+    position: relative;
+    margin-left: 2px;
+  }
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    height: 27px;
+    width: 17px;
+    background: var(--White);
+    top: 18px;
+    left: -22px;
+    transform: rotate(32deg);
+    border-top: 2px solid var(--Black);
+    border-right: 2px solid var(--Black);
+  }
+  .error {
+    position: relative;
+    color: var(--Danger);
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+  }
+}
+
+@media (max-width: 285px) {
+  .chatUser {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 280px;
+  }
+  .chatUser .chat-message-user {
+    display: flex;
+    width: 84%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    font-size: 20px;
+  }
+  .invite-div {
+    display: flex;
+  }
+  .input-user {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+    background-color: transparent;
+  }
+  .input-user.error {
+    height: 30px;
+    width: 150px;
+    border: 2px solid var(--Black);
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user::placeholder {
+    opacity: 1;
+    color: var(--Black);
+    padding-left: 5px;
+    font-size: 16px;
+    transition: ease-in-out 200ms;
+  }
+  .input-user.error::placeholder {
+    opacity: 1;
+    color: var(--Danger);
+    padding-left: 5px;
+    font-size: 18px;
+    transition: ease-in-out 200ms;
+  }
+  .invite-button {
+    outline: none;
+    position: relative;
+    box-sizing: content-box;
+    display: block;
+    padding: 0px;
+  }
+  .chat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .invite-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 40px solid var(--Success);
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+  }
+  .user .tooltip {
+    position: relative;
+    margin-left: 2px;
+  }
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    height: 27px;
+    width: 17px;
+    background: var(--White);
+    top: 18px;
+    left: -22px;
+    transform: rotate(32deg);
+    border-top: 2px solid var(--Black);
+    border-right: 2px solid var(--Black);
+  }
+  .error {
+    position: relative;
+    color: var(--Danger);
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+  }
+}

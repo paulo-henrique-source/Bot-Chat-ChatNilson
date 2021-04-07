@@ -1,10 +1,20 @@
 import React from 'react'
+import { useTheme } from '../../Hooks'
+
 import './styles.css'
 
 export const Rating = () => {
+  const { theme } = useTheme()
+
   return (
-    <div className="chat user">
-      <div className="chat-message-user">
+    <div className="chatUser user">
+      <div
+        style={{
+          color: theme.colors.messageUserText,
+          backgroundColor: theme.colors.messageUserBackground,
+        }}
+        className="chat-message-user"
+      >
         <div className="rating-center">
           <div className="rating">
             <label>
@@ -40,7 +50,6 @@ export const Rating = () => {
           </div>
         </div>
       </div>
-      <span className="tooltip"></span>
     </div>
   )
 }

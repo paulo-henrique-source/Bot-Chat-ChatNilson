@@ -1,11 +1,11 @@
 .chatbox {
   width: 500px;
   min-width: 390px;
-  height: 600px;
-  background: #cfe2f3;
+  height: 580px;
+  background: var(--blackShadow);
   padding: 25px;
-  margin: 20px auto;
-  box-shadow: 0 3px #ccc;
+  margin: 0px auto 20px auto;
+  box-shadow: 0 3px var(--GreyLight);
 }
 
 .chatlogs {
@@ -22,7 +22,7 @@
 
 .chatlogs::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: rgba(0, 0, 0, .1);
+  background: var(--BlackShadowLight)
 }
 
 .hide {
@@ -30,13 +30,13 @@
 }
 
 .saveButton {
-  background-color: #fff;
+  background-color: var(--Primary);
   width: 70%;
   justify-content: center;
   display: flex;
   align-items: center;
   margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+  box-shadow: var(--BlackShadowLightSecondary) 0px 2px 15px;
   padding: 10px;
   font-size: 20px;
   border-radius: 10px;
@@ -45,4 +45,93 @@
 
 .stepFive {
   margin-bottom: 40px;
+}
+
+.loading {
+  position: relative;
+  padding: 8px 16px;
+  background: var(--Primary);
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.loading:active {
+  background: var(--Primary);
+}
+
+.button__text {
+  font: bold 20px "Quicksand", san-serif;
+  color: var(--WhitePlus);
+  transition: all 0.2s;
+}
+
+.active .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: var(--Black);
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (max-width: 870px) {
+  .chatbox {
+    width: 500px;
+    min-width: 390px;
+    height: 86vh;
+    background: var(--BlueLight);
+    padding: 25px;
+    box-shadow: 0 3px var(--GreyLight);
+  }
+  .chatlogs {
+    padding: 10px;
+    width: 100%;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 570px) {
+  .chatbox {
+    width: 500px;
+    min-width: 390px;
+    height: 100vh;
+    background: var(--BlueLight);
+    padding: 25px;
+    box-shadow: 0 3px var(--GreyLight);
+  }
+  .chatlogs {
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .masterHome {
+    margin: 150px auto;
+  }
 }

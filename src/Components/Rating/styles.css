@@ -7,8 +7,8 @@
   display: inline-block;
   position: relative;
   height: 50px;
-  line-height: 50px;
-  font-size: 50px;
+  line-height: 35px;
+  font-size: 40px;
 }
 
 .rating label {
@@ -51,7 +51,7 @@
 }
 
 .icon {
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .rating label .icon {
@@ -60,14 +60,14 @@
 }
 
 .rating label:last-child .icon {
-  color: #000;
+  color: white;
 }
 
 .rating:not(:hover) label input:checked~.icon, .rating:hover label:hover input~.icon {
-  color: #f4c436;
+  color: #ffdd3c;
 }
 
 .rating label input:focus:not(:checked)~.icon:last-child {
-  color: #000;
-  text-shadow: 0 0 5px #f4c436;
+  color: white;
+  text-shadow: 0 0 5px #ffdd3c;
 }

@@ -1,8 +1,26 @@
+:root {
+  --BackgroundContainer: #D7DBD8;
+  --Primary: #71E1EC;
+  --PrimaryDark: #46b1bb;
+  --Black: black;
+  --BlackShadow: #1e1d23;
+  --BlackShadowLight: rgba(0, 0, 0, .1);
+  --BlackShadowLightSecondary: rgba(0, 0, 0, 0.35);
+  --White: white;
+  --WhitePlus: #fff;
+  --Success: #28A745;
+  --Danger: #DC3545;
+  --Grey: grey;
+  --GreyDark: #47484b;
+  --GreyLight: #ccc;
+  --BlueLight: #cfe2f3;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #D7DBD8;
+  background: var(--BackgroundContainer);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 

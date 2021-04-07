@@ -1,12 +1,11 @@
-import './App.css'
-import UserProvider from './Hooks'
+import ThemeProvider from './Hooks'
 import Routes from './Routes/index.js'
 
 const App = () => {
   return (
-    <UserProvider>
+    <ThemeProvider>
       <Routes />
-    </UserProvider>
+    </ThemeProvider>
   )
 }
 

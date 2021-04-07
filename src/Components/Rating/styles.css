@@ -9,6 +9,7 @@
   height: 50px;
   line-height: 35px;
   font-size: 40px;
+  width: 500px;
 }
 
 .rating label {
@@ -79,6 +80,7 @@
     height: 50px;
     line-height: 35px;
     font-size: 29px;
+    width: 500px;
   }
 }
 
@@ -89,6 +91,7 @@
     height: 50px;
     line-height: 35px;
     font-size: 35px;
+    width: 500px;
   }
 }
 
@@ -99,6 +102,7 @@
     height: 50px;
     line-height: 35px;
     font-size: 28px;
+    width: 500px;
   }
 }
 
@@ -109,5 +113,6 @@
     height: 50px;
     line-height: 35px;
     font-size: 25px;
+    width: 500px;
   }
 }

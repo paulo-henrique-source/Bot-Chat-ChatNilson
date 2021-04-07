@@ -231,6 +231,19 @@
     overflow-x: hidden;
     overflow-y: scroll;
   }
+  .saveButton {
+    background-color: var(--Primary);
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    box-shadow: var(--BlackShadowLightSecondary) 0px 2px 15px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 285px) {

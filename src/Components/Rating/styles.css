@@ -81,3 +81,33 @@
     font-size: 29px;
   }
 }
+
+@media (max-width: 420px) {
+  .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 35px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 380px) {
+  .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 35px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 325px) {
+  .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 35px;
+    font-size: 25px;
+  }
+}

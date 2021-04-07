@@ -103,7 +103,6 @@ const Home = () => {
       }
     } catch (err) {
       console.error(err)
-    } finally {
     }
   }
 
@@ -123,6 +122,7 @@ const Home = () => {
       setIsLoading(false)
       console.log(data)
       alert('Usuario Cadastrado com Sucesso !')
+      window.location.reload()
     }
   }
 
